@@ -1,0 +1,41 @@
+.section-heading{
+
+margin-bottom:60px;
+
+}
+
+.section-heading.center{
+
+text-align:center;
+
+}
+
+.section-heading span{
+
+color:var(--primary);
+
+font-weight:700;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
+
+}
+
+.section-heading h2{
+
+font-size:3rem;
+
+margin-top:12px;
+
+line-height:1.2;
+
+max-width:800px;
+
+}
+
+.section-heading.center h2{
+
+margin-inline:auto;
+
+}

@@ -1,6 +1,18 @@
+import {
+  FaLaptopCode,
+  FaUsers,
+  FaHardHat,
+  FaTruck,
+  FaCog,
+  FaIndustry,
+  FaMoneyBill,
+  FaCalculator
+} from "react-icons/fa";
+
 export const servicesData = [
-  {
+  { icon: FaLaptopCode,
     title: "IT Solutions",
+    description: "Software Development, ERP Implementation and digital transformation.",
     path: "/services/it-solutions",
     items: [
       "Software Development",
@@ -10,8 +22,9 @@ export const servicesData = [
     ]
   },
 
-  {
+  { icon: FaUsers,
     title: "Workforce Solutions",
+    description: "End to End Solution for all types of Workforce required in a Construction domain.",
     path: "/services/workforce-solutions",
     items: [
       "Recruitment",
@@ -21,8 +34,9 @@ export const servicesData = [
     ]
   },
 
-  {
+  { icon: FaHardHat,
     title: "Civil & Construction",
+    description: "Complete civil solutions at your door step.",
     path: "/services/civil-construction",
     items: [
       "Civil Contracts",
@@ -32,8 +46,9 @@ export const servicesData = [
     ]
   },
 
-  {
+  { icon: FaCog,
     title: "Machinery & Equipment",
+    description: "Whether its HMC or LMV MOISRA has all mechanical solutions.",
     path: "/services/machinery-equipment",
     items: [
       "Rental",
@@ -43,8 +58,9 @@ export const servicesData = [
     ]
   },
 
-  {
+  { icon: FaTruck,
     title: "Transportation & Logistics",
+    description: "Delivering complete transport and logistics solutions at your finger tip.",
     path: "/services/transportation-logistics",
     items: [
       "Fleet Management",
@@ -54,8 +70,9 @@ export const servicesData = [
     ]
   },
 
-  {
+  { icon: FaIndustry,
     title: "Industrial Supplies",
+    description: "Complete Industrial supplies.",
     path: "/services/industrial-supplies",
     items: [
       "Consumables",
@@ -65,8 +82,9 @@ export const servicesData = [
     ]
   },
 
-  {
+  { icon: FaMoneyBill,
     title: "Finance & Insurance",
+    description: "All finance and insurance related solutions.",
     path: "/services/finance-insurance",
     items: [
       "Loans",
@@ -76,8 +94,9 @@ export const servicesData = [
     ]
   },
 
-  {
+  { icon: FaCalculator,
     title: "Accounts & Taxation",
+    description: "Audit, Analysis and complete accounting solutions.",
     path: "/services/accounts-taxation",
     items: [
       "GST",
