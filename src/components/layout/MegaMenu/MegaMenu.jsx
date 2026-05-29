@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { servicesData } from "../../../data/servicesData";
 
 import "./MegaMenu.css";
@@ -13,21 +14,23 @@ function MegaMenu() {
       <div className="mega-menu">
 
         {servicesData.map((service) => (
-
           <div
-            key={service.title}
+            key={service.slug}
             className="mega-column"
           >
-            <h4>{service.title}</h4>
 
-            {service.items.map((item) => (
-              <p key={item}>
-                {item}
-              </p>
-            ))}
+            <Link
+              to={`/services/${service.slug}`}
+              className="mega-service-link"
+            >
+              <h4>{service.title}</h4>
+            </Link>
+
+            <p>
+              {service.tagline}
+            </p>
 
           </div>
-
         ))}
 
       </div>

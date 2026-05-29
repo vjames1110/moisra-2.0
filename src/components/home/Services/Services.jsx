@@ -39,9 +39,11 @@ function Services() {
 
                 <h3>{service.title}</h3>
 
-                <p>{service.description}</p>
+                <p>{service.shortDescription}</p>
 
-                <Link to={service.path} className="service-link">
+                <Link 
+                    to={`/services/${service.slug}`} 
+                    className="service-link">
                   Learn More
                 </Link>
               </motion.div>

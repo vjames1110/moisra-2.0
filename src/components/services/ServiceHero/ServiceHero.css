@@ -1,0 +1,159 @@
+.service-hero {
+  padding-top: 180px;
+  padding-bottom: 120px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0A6ED1 0%,
+      #114D94 45%,
+      #0B1F3A 100%
+    );
+
+  color: white;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.service-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.08);
+
+  top: -220px;
+  right: -180px;
+}
+
+.service-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 850px;
+}
+
+.service-badge {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  border-radius: 40px;
+
+  background: rgba(255,255,255,0.15);
+
+  margin-bottom: 24px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.service-hero h1 {
+  font-size: 4rem;
+
+  line-height: 1.1;
+
+  margin-bottom: 20px;
+}
+
+.service-tagline {
+  font-size: 1.4rem;
+
+  font-weight: 600;
+
+  margin-bottom: 20px;
+
+  opacity: 0.95;
+}
+
+.service-description {
+  max-width: 700px;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  opacity: 0.9;
+}
+
+.service-hero-actions {
+  display: flex;
+
+  gap: 20px;
+
+  margin-top: 40px;
+
+  flex-wrap: wrap;
+}
+
+.service-primary-btn {
+  background: white;
+
+  color: var(--primary);
+
+  padding: 16px 32px;
+
+  border-radius: 12px;
+
+  font-weight: 700;
+
+  transition: var(--transition);
+}
+
+.service-primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.service-secondary-btn {
+  background: transparent;
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  color: white;
+
+  padding: 16px 32px;
+
+  border-radius: 12px;
+
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .service-hero {
+    padding-top: 150px;
+    padding-bottom: 90px;
+  }
+
+  .service-hero h1 {
+    font-size: 3rem;
+  }
+
+  .service-tagline {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .service-hero-actions {
+    flex-direction: column;
+  }
+
+  .service-primary-btn,
+  .service-secondary-btn {
+    width: 100%;
+  }
+}
