@@ -5,6 +5,7 @@ import ServiceHero from "../../components/services/ServiceHero/ServiceHero";
 import ServiceOverview from "../../components/services/ServiceOverview/ServiceOverview";
 import ServiceCategories from "../../components/services/ServiceCategories/ServiceCategories";
 import ServiceCTA from "../../components/services/ServiceCTA/ServiceCTA";
+import ServiceEnquiryForm from "../../components/services/ServiceEnquiryForm/ServiceEnquiryForm";
 
 import { servicesData } from "../../data/servicesData";
 
@@ -38,6 +39,7 @@ function ServicePage() {
       <ServiceHero service={service} />
       <ServiceOverview service={service} />
       <ServiceCategories service={service} />
+      <ServiceEnquiryForm service={service} />
       <ServiceCTA service={service} />
       <Footer />
     </>
