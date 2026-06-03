@@ -1,0 +1,291 @@
+/* =========================================
+   MOISRA WORKFORCE FORM
+========================================= */
+
+.workforce-form-section{
+  background:#f8fbff;
+}
+
+.workforce-selector{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:30px;
+
+  margin-bottom:50px;
+}
+
+.selector-card{
+
+  background:white;
+
+  border:2px solid
+    var(--border);
+
+  border-radius:24px;
+
+  padding:40px;
+
+  text-align:center;
+
+  cursor:pointer;
+
+  transition:
+    var(--transition);
+
+  box-shadow:
+    var(--shadow-sm);
+}
+
+.selector-card:hover{
+
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    var(--shadow-md);
+}
+
+.selector-card svg{
+
+  font-size:50px;
+
+  color:var(--primary);
+
+  margin-bottom:20px;
+}
+
+.selector-card h3{
+
+  font-size:1.4rem;
+
+  margin-bottom:12px;
+
+  color:var(--dark);
+}
+
+.selector-card p{
+
+  color:
+    var(--text-light);
+
+  line-height:1.7;
+}
+
+.selector-card.active{
+
+  border-color:
+    var(--primary);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(10,110,209,.08),
+      rgba(17,77,148,.05)
+    );
+
+  box-shadow:
+    var(--shadow-md);
+}
+
+/* FORM CARD */
+
+.workforce-form{
+
+  background:white;
+
+  border-radius:24px;
+
+  padding:50px;
+
+  box-shadow:
+    var(--shadow-md);
+
+  animation:
+    fadeIn .3s ease;
+}
+
+/* FORM HEADINGS */
+
+.form-section-title{
+
+  font-size:1.3rem;
+
+  color:var(--dark);
+
+  margin-bottom:25px;
+
+  padding-bottom:12px;
+
+  border-bottom:
+    2px solid
+    var(--border);
+}
+
+/* GRID */
+
+.form-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:24px;
+
+  margin-bottom:40px;
+}
+
+.form-group{
+
+  display:flex;
+
+  flex-direction:column;
+}
+
+.form-group label{
+
+  font-weight:600;
+
+  margin-bottom:10px;
+
+  color:var(--dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+  padding:15px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:12px;
+
+  font-size:.95rem;
+
+  transition:
+    var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+  outline:none;
+
+  border-color:
+    var(--primary);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(10,110,209,.15);
+}
+
+.full-width{
+
+  grid-column:
+    span 2;
+}
+
+/* BUTTON */
+
+.submit-btn{
+
+  width:100%;
+
+  padding:18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary),
+      var(--primary-dark)
+    );
+
+  color:white;
+
+  border:none;
+
+  border-radius:14px;
+
+  font-size:1rem;
+
+  font-weight:700;
+
+  transition:
+    var(--transition);
+}
+
+.submit-btn:hover{
+
+  transform:
+    translateY(-3px);
+}
+
+.submit-btn:disabled{
+
+  opacity:.7;
+
+  cursor:not-allowed;
+}
+
+/* SUCCESS */
+
+.success-message{
+
+  margin-bottom:20px;
+
+  padding:16px;
+
+  border-radius:12px;
+
+  background:#e8fff1;
+
+  color:#0f8f4f;
+
+  font-weight:600;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+  from{
+    opacity:0;
+    transform:
+      translateY(15px);
+  }
+
+  to{
+    opacity:1;
+    transform:
+      translateY(0);
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+  .workforce-selector{
+    grid-template-columns:1fr;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .full-width{
+    grid-column:auto;
+  }
+
+  .workforce-form{
+    padding:30px;
+  }
+}
