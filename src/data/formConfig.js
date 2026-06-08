@@ -64,8 +64,8 @@ export const formConfig = {
     "Finance & Accounts",
     "Human Resources",
     "Operations",
-    "Transportation & Logistics",
-    "Procurement",
+    "Machinery & Transportation",
+    "Store & Procurement",
     "Administration",
   ],
 
@@ -80,6 +80,16 @@ export const formConfig = {
   ],
 
   "Construction": [
+    "Unskilled Labour",
+    "Semi Skilled Labour",
+    "Skilled Labour",
+    "Supervisor",
+    "Senior Supervisor",
+    "Trainee Engineer",
+    "Senior Engineer",
+    "Deputy Project Manager",
+    "Senior Project Manager",
+    "Project Director",
     "Civil Engineer",
     "Site Engineer",
     "Site Supervisor",
@@ -87,6 +97,13 @@ export const formConfig = {
   ],
 
   "Finance & Accounts": [
+    "Accounts Assistant",
+    "Executive",
+    "Assistant Manager",
+    "Deputy Manager",
+    "Manager",
+    "Senior Manager",
+    "General Manager",
     "Accountant",
     "Tax Consultant",
     "Financial Analyst",
@@ -96,26 +113,62 @@ export const formConfig = {
     "HR Executive",
     "HR Manager",
     "Recruiter",
+    "Senior Manager",
+    "Deputy Manager",
+    "General Manager"
   ],
 
   "Operations": [
+    "Operations Head",
+    "Site Head",
+    "Site Incharge",
     "Operations Executive",
     "Operations Manager",
   ],
-  "Transportation & Logistics": [
+  "Machinery & Transportation": [
   "Transport Manager",
   "Fleet Supervisor",
   "Logistics Coordinator",
+  "Car Driver",
+  "Camper Driver",
+  "Tipper Driver",
+  "Transit Mixture Driver",
+  "Tractor Driver",
+  "Water Tanker Driver",
+  "Diesel Tanker Driver",
+  "Trailer Driver",
+  "Excavator Operator",
+  "Dozer Operator",
+  "Backhoe Loader Operator",
+  "Grader Operator",
+  "Soil Compactor Operator",
+  "Hydra Operator",
+  "Farana Operator",
+  "SLM Operator",
+  "Loader Operator",
+  "Tower Crane Operator",
+  "Concrete Boom Pump Operator",
+  "Crusher Operator"
 ],
 
-"Procurement": [
+"Store & Procurement": [
   "Procurement Executive",
   "Purchase Manager",
+  "Store Executive",
+  "Assistant Manager Store",
+  "Senior Manager Store",
+  "Deputy Manger Store",
+  "General Manager Store",
+
 ],
 
 "Administration": [
   "Admin Executive",
   "Office Manager",
+  "Office Staff",
+  "Janitorial Staff",
+  "Peon",
+  "Reception Staff",
 ],
 },
 
@@ -135,6 +188,7 @@ export const formConfig = {
     "₹4-6 LPA",
     "₹6-10 LPA",
     "₹10+ LPA",
+    "₹15+ LPA"
   ],
 
   expectedSalaryRanges: [
