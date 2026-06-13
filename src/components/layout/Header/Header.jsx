@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { HiBars3 } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 
+// Logo Import
+
+import logo from "../../../logos/moisra-logo.png"
+
+
 import MegaMenu from "../MegaMenu/MegaMenu";
 
 import "./Header.css";
@@ -16,7 +21,10 @@ function Header() {
       <div className="container header-container">
 
         <Link to="/" className="logo">
-          MOISRA
+          <img 
+            src={logo}
+            alt="MOISRA Logo"
+          ></img>    
         </Link>
 
         <nav className={`nav ${mobileMenu ? "active" : ""}`}>
