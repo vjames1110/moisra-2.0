@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 
 // Logo Import
 
-import logo from "../../../logos/moisra-logo.png"
+import logo from "../../../logos/moisra-logo-2.png"
 
 
 import MegaMenu from "../MegaMenu/MegaMenu";
